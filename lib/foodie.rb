@@ -4,5 +4,14 @@ require_relative "foodie/version"
 
 module Foodie
   class Error < StandardError; end
-  # Your code goes here...
+  
+  class Food
+    def self.portray(food)
+      if food.downcase == "broccoli"
+        "Gross!"
+      else
+        "Delicious!"
+      end
+    end
+  end
 end
